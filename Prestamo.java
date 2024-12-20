@@ -33,10 +33,10 @@ public class Prestamo {
     public Prestamo() {
     }
 
-    public Prestamo(Ejemplar ejemplar, LocalDate fechaDevolucion, LocalDate fechaInicio, Usuario usuario) {
+    public Prestamo(Ejemplar ejemplar, LocalDate fechaInicio, Usuario usuario) {
         this.ejemplar = ejemplar;
-        this.fechaDevolucion = fechaDevolucion;
         this.fechaInicio = fechaInicio;
+        this.fechaDevolucion = fechaInicio.plusDays(15);
         this.usuario = usuario;
     }
 
@@ -79,6 +79,8 @@ public class Prestamo {
     public void setFechaDevolucion(LocalDate fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
+
+
 
     @Override
     public String toString() {

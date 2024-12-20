@@ -38,12 +38,12 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String dni, String email, String nombre, String password, LocalDate penalizacionHasta, String tipo) {
+    public Usuario(String dni, String email, String nombre, String password, String tipo) {
         this.dni = dni;
         this.email = email;
         this.nombre = nombre;
         this.password = password;
-        this.penalizacionHasta = penalizacionHasta;
+        this.penalizacionHasta = null;
         this.tipo = tipo;
     }
 

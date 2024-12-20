@@ -5,4 +5,7 @@ public class DAOUsuario extends  DAOGenerico<Usuario>{
         super(Usuario.class);
     }
 
+
+
+
 }

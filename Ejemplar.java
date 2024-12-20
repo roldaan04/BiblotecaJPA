@@ -35,7 +35,10 @@ public class Ejemplar {
             this.estado = estado;
         }
 
-        public Integer getId() {
+
+
+
+    public Integer getId() {
             return id;
         }
 
